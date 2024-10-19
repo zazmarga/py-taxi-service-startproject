@@ -16,7 +16,7 @@ class Manufacturer(models.Model):
         ordering = ("name", )
 
     def __str__(self):
-        return f"{self.name} ({self.country})"
+        return "{} ({})".format(self.name, self.country)
 
 
 class Car(models.Model):
